@@ -1,10 +1,10 @@
-# 💡 Exemplos de Uso - Zeca Delivery
+# Exemplos de Uso - Zeca Delivery
 
 Este arquivo contém exemplos práticos de como usar o sistema Zeca Delivery em diferentes cenários.
 
 ---
 
-## 🚀 Cenário 1: Execução Básica
+## Cenário 1: Execução Básica
 
 ### Passo a Passo Completo
 
@@ -25,7 +25,7 @@ python reports/excel_generator.py
 
 ---
 
-## 📊 Cenário 2: Consumindo a API com Python
+## Cenário 2: Consumindo a API com Python
 
 ### Script Personalizado
 
@@ -55,28 +55,27 @@ class ZecaDeliveryClient:
     
     def show_daily_summary(self):
         """Exibe resumo do dia"""
-        print("📊 RESUMO DIÁRIO - ZECA DELIVERY")
+        print("RESUMO DIÁRIO - ZECA DELIVERY")
         print("=" * 40)
         
         # Estatísticas
         stats_response = self.get_delivery_stats()
         if stats_response['status'] == 'success':
             stats = stats_response['data']
-            print(f"📦 Total de entregas: {stats['total_entregas']}")
-            print(f"💰 Valor total: R$ {stats['valor_total']:.2f}")
-            print(f"📈 Taxa de entrega: {stats['taxa_entrega']:.1f}%")
-            print(f"💸 Valor médio: R$ {stats['valor_medio']:.2f}")
+            print(f"Total de entregas: {stats['total_entregas']}")
+            print(f"Valor total: R$ {stats['valor_total']:.2f}")
+            print(f"Taxa de entrega: {stats['taxa_entrega']:.1f}%")
+            print(f"Valor médio: R$ {stats['valor_medio']:.2f}")
             
-            print("\n📋 Distribuição por status:")
+            print("\nDistribuição por status:")
             for status, count in stats['distribuicao_status'].items():
-                emoji = {'pendente': '🟡', 'em_transito': '🔵', 'entregue': '🟢'}.get(status, '⚪')
-                print(f"  {emoji} {status.replace('_', ' ').title()}: {count}")
+                print(f"  {status.replace('_', ' ').title()}: {count}")
         
         # Entregas pendentes
         pending_response = self.get_pending_deliveries()
         if pending_response['status'] == 'success':
             pending = pending_response['data']
-            print(f"\n🔄 Entregas pendentes ({len(pending)}):")
+            print(f"\nEntregas pendentes ({len(pending)}):")
             for entrega in pending:
                 print(f"  • {entrega['cliente']} - {entrega['produto']} - R$ {entrega['valor']:.2f}")
 
@@ -88,19 +87,19 @@ if __name__ == "__main__":
 
 **Output Esperado:**
 ```
-📊 RESUMO DIÁRIO - ZECA DELIVERY
+RESUMO DIÁRIO - ZECA DELIVERY
 ========================================
-📦 Total de entregas: 5
-💰 Valor total: R$ 280.90
-📈 Taxa de entrega: 20.0%
-💸 Valor médio: R$ 56.18
+Total de entregas: 5
+Valor total: R$ 280.90
+Taxa de entrega: 20.0%
+Valor médio: R$ 56.18
 
-📋 Distribuição por status:
-  🟡 Pendente: 3
-  🔵 Em Transito: 1
-  🟢 Entregue: 1
+Distribuição por status:
+  Pendente: 3
+  Em Transito: 1
+  Entregue: 1
 
-🔄 Entregas pendentes (3):
+Entregas pendentes (3):
   • João Silva - Pizza Calabresa - R$ 45.90
   • Carlos Oliveira - Pizza Portuguesa - R$ 89.70
   • Pedro Ferreira - Pizza Pepperoni - R$ 67.80
@@ -108,7 +107,7 @@ if __name__ == "__main__":
 
 ---
 
-## 📈 Cenário 3: Monitoramento Automatizado
+## Cenário 3: Monitoramento Automatizado
 
 ### Script de Monitoramento
 
@@ -127,16 +126,16 @@ def monitor_api_health():
             timestamp = datetime.now().strftime("%H:%M:%S")
             
             if response.status_code == 200:
-                print(f"✅ {timestamp} - API Online")
+                print(f"[OK] {timestamp} - API Online")
             else:
-                print(f"⚠️ {timestamp} - API com problemas (Status: {response.status_code})")
+                print(f"[WARN] {timestamp} - API com problemas (Status: {response.status_code})")
                 
         except requests.exceptions.ConnectionError:
             timestamp = datetime.now().strftime("%H:%M:%S")
-            print(f"❌ {timestamp} - API Offline")
+            print(f"[ERROR] {timestamp} - API Offline")
         except Exception as e:
             timestamp = datetime.now().strftime("%H:%M:%S")
-            print(f"🔧 {timestamp} - Erro: {e}")
+            print(f"[ERROR] {timestamp} - Erro: {e}")
         
         time.sleep(30)  # Verificar a cada 30 segundos
 
@@ -146,7 +145,7 @@ def monitor_api_health():
 
 ---
 
-## 📱 Cenário 4: Integração com WhatsApp (Conceitual)
+## Cenário 4: Integração com WhatsApp (Conceitual)
 
 ### Simulação de Bot
 
@@ -166,7 +165,7 @@ class WhatsAppIntegration:
             delivery_data = self.parse_message(customer_message)
             
             # Em um sistema real, faria POST para criar entrega
-            print(f"📱 Nova entrega criada: {delivery_data}")
+            print(f"Nova entrega criada: {delivery_data}")
             
             # Buscar status atual
             return self.get_delivery_status_message()
@@ -188,11 +187,11 @@ class WhatsAppIntegration:
             
             if data['status'] == 'success':
                 pending_count = data['total']
-                return f"✅ Pedido recebido! {pending_count} entregas na fila."
+                return f"Pedido recebido! {pending_count} entregas na fila."
             else:
-                return "❌ Erro ao processar pedido."
+                return "Erro ao processar pedido."
         except:
-            return "❌ Sistema temporariamente indisponível."
+            return "Sistema temporariamente indisponível."
 
 # Simulação
 bot = WhatsAppIntegration()
@@ -202,7 +201,7 @@ print(response)
 
 ---
 
-## 🔄 Cenário 5: Automação com Agenda
+## Cenário 5: Automação com Agenda
 
 ### Relatório Automático Diário
 
@@ -213,15 +212,15 @@ from reports.excel_generator import DeliveryReportGenerator
 
 def generate_daily_report():
     """Gera relatório diário automaticamente"""
-    print("⏰ Gerando relatório diário automático...")
+    print("Gerando relatório diário automático...")
     
     generator = DeliveryReportGenerator()
     success = generator.generate_report()
     
     if success:
-        print("✅ Relatório diário gerado com sucesso!")
+        print("Relatório diário gerado com sucesso!")
     else:
-        print("❌ Falha na geração do relatório diário")
+        print("Falha na geração do relatório diário")
 
 # Agendar para executar todos os dias às 18:00
 schedule.every().day.at("18:00").do(generate_daily_report)
@@ -231,7 +230,7 @@ schedule.every(4).hours.do(generate_daily_report)
 
 # Loop principal (executar em produção)
 def run_scheduler():
-    print("📅 Agendador iniciado...")
+    print("Agendador iniciado...")
     while True:
         schedule.run_pending()
         time.sleep(60)  # Verificar a cada minuto
@@ -242,7 +241,7 @@ def run_scheduler():
 
 ---
 
-## 📊 Cenário 6: Dashboard em Tempo Real
+## Cenário 6: Dashboard em Tempo Real
 
 ### Servidor Web Simples
 
@@ -279,25 +278,25 @@ def dashboard():
             </style>
         </head>
         <body>
-            <h1>📊 Dashboard Zeca Delivery</h1>
+            <h1>Dashboard Zeca Delivery</h1>
             
             <div class="stat">
-                <h3>📦 Total de Entregas</h3>
+                <h3>Total de Entregas</h3>
                 <p>{{ stats.total_entregas }}</p>
             </div>
             
             <div class="stat">
-                <h3>💰 Valor Total</h3>
+                <h3>Valor Total</h3>
                 <p>R$ {{ "%.2f"|format(stats.valor_total) }}</p>
             </div>
             
             <div class="stat">
-                <h3>📈 Taxa de Entrega</h3>
+                <h3>Taxa de Entrega</h3>
                 <p>{{ "%.1f"|format(stats.taxa_entrega) }}%</p>
             </div>
             
             <div class="stat pending">
-                <h3>🔄 Entregas Pendentes ({{ pending|length }})</h3>
+                <h3>Entregas Pendentes ({{ pending|length }})</h3>
                 {% for entrega in pending %}
                 <p>• {{ entrega.cliente }} - {{ entrega.produto }} - R$ {{ "%.2f"|format(entrega.valor) }}</p>
                 {% endfor %}
@@ -312,7 +311,7 @@ def dashboard():
         return f"Erro: {e}"
 
 if __name__ == "__main__":
-    print("🌐 Dashboard disponível em: http://localhost:8000/dashboard")
+    print("Dashboard disponível em: http://localhost:8000/dashboard")
     app.run(port=8000, debug=True)
 ```
 
@@ -320,7 +319,7 @@ if __name__ == "__main__":
 
 ---
 
-## 🧪 Cenário 7: Testes Automatizados
+## Cenário 7: Testes Automatizados
 
 ### Script de Teste Completo
 
@@ -332,7 +331,7 @@ def test_full_system():
     """Testa todo o sistema automaticamente"""
     base_url = "http://localhost:5000"
     
-    print("🧪 INICIANDO TESTES DO SISTEMA")
+    print("INICIANDO TESTES DO SISTEMA")
     print("=" * 40)
     
     tests = [
@@ -354,24 +353,24 @@ def test_full_system():
             if response.status_code == 200:
                 data = response.json()
                 if data.get('status') == 'success' or 'healthy' in str(data):
-                    results.append(f"✅ {test_name} - {response_time:.2f}s")
+                    results.append(f"[PASS] {test_name} - {response_time:.2f}s")
                 else:
-                    results.append(f"⚠️ {test_name} - Resposta inesperada")
+                    results.append(f"[WARN] {test_name} - Resposta inesperada")
             else:
-                results.append(f"❌ {test_name} - Status {response.status_code}")
+                results.append(f"[FAIL] {test_name} - Status {response.status_code}")
                 
         except Exception as e:
-            results.append(f"💥 {test_name} - Erro: {e}")
+            results.append(f"[ERROR] {test_name} - Erro: {e}")
     
     # Resultados
-    print("\n📋 RESULTADOS DOS TESTES:")
+    print("\nRESULTADOS DOS TESTES:")
     for result in results:
         print(f"  {result}")
     
     # Resumo
-    passed = len([r for r in results if r.startswith("✅")])
+    passed = len([r for r in results if r.startswith("[PASS]")])
     total = len(results)
-    print(f"\n🎯 RESUMO: {passed}/{total} testes passaram")
+    print(f"\nRESUMO: {passed}/{total} testes passaram")
     
     return passed == total
 
@@ -379,14 +378,14 @@ def test_full_system():
 if __name__ == "__main__":
     success = test_full_system()
     if success:
-        print("🎉 Todos os testes passaram!")
+        print("Todos os testes passaram!")
     else:
-        print("🔧 Alguns testes falharam. Verifique a API.")
+        print("Alguns testes falharam. Verifique a API.")
 ```
 
 ---
 
-## 🔧 Cenário 8: Personalização dos Dados
+## Cenário 8: Personalização dos Dados
 
 ### Modificando Dados de Exemplo
 
@@ -437,7 +436,7 @@ headers = [
 
 ---
 
-## 📚 Recursos Adicionais
+## Recursos Adicionais
 
 ### Comandos Úteis
 
@@ -474,4 +473,4 @@ def sync_with_external_system():
 
 ---
 
-Estes exemplos demonstram a flexibilidade e potencial do sistema Zeca Delivery para automação de processos reais de delivery! 🚀
+Estes exemplos demonstram a flexibilidade e potencial do sistema Zeca Delivery para automação de processos reais de delivery!
