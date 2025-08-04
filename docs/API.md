@@ -1,4 +1,4 @@
-# 📖 Documentação da API - Zeca Delivery
+# Documentação da API - Zeca Delivery
 
 ## Visão Geral
 
@@ -8,7 +8,7 @@ A API REST do sistema Zeca Delivery fornece endpoints para gerenciar entregas de
 
 ---
 
-## 🏠 Endpoint Principal
+## Endpoint Principal
 
 ### `GET /`
 Página inicial da API com informações básicas.
@@ -32,7 +32,7 @@ Página inicial da API com informações básicas.
 
 ---
 
-## 🔍 Health Check
+## Health Check
 
 ### `GET /api/health`
 Verifica se a API está funcionando corretamente.
@@ -51,7 +51,7 @@ Verifica se a API está funcionando corretamente.
 
 ---
 
-## 📦 Endpoints de Entregas
+## Endpoints de Entregas
 
 ### `GET /api/entregas`
 Retorna todas as entregas cadastradas.
@@ -118,7 +118,7 @@ GET /api/entregas/status/em_transito
 
 ---
 
-## 📊 Estatísticas
+## Estatísticas
 
 ### `GET /api/stats`
 Retorna estatísticas consolidadas das entregas.
@@ -151,7 +151,7 @@ Retorna estatísticas consolidadas das entregas.
 
 ---
 
-## ❌ Tratamento de Erros
+## Tratamento de Erros
 
 ### Códigos de Status HTTP
 
@@ -190,7 +190,7 @@ GET /api/inexistente
 
 ---
 
-## 🔧 Estrutura dos Dados
+## Estrutura dos Dados
 
 ### Objeto Entrega
 
@@ -224,7 +224,7 @@ GET /api/inexistente
 
 ---
 
-## 🧪 Testando a API
+## Testando a API
 
 ### Usando curl (Terminal)
 
@@ -270,17 +270,17 @@ print(f"Valor total: R$ {stats['valor_total']}")
 
 ---
 
-## 📈 Monitoramento
+## Monitoramento
 
 ### Logs da API
 A API exibe logs no terminal durante execução:
 
 ```
-🚀 Iniciando API de Entregas Zeca...
-📍 Endpoints disponíveis:
+Iniciando API de Entregas Zeca...
+Endpoints disponíveis:
    GET /api/entregas - Todas as entregas
    GET /api/health - Health check
-🌐 API rodando em: http://localhost:5000
+API rodando em: http://localhost:5000
 ```
 
 ### Verificação de Saúde
@@ -288,7 +288,7 @@ Use o endpoint `/api/health` para monitoramento automatizado.
 
 ---
 
-## 🚀 Executando a API
+## Executando a API
 
 ```bash
 # Navegar para o diretório
@@ -302,15 +302,15 @@ A API estará disponível em `http://localhost:5000` com debug ativado.
 
 ---
 
-## 💡 Próximos Passos
+## Próximos Passos
 
 Esta API serve como base para expansões:
 
-- 🔐 **Autenticação** com JWT
-- 🗄️ **Banco de dados** real (PostgreSQL/MySQL)  
-- 🔄 **CRUD completo** (POST, PUT, DELETE)
-- 📧 **Notificações** por email/SMS
-- 🗺️ **Integração** com APIs de mapas
-- 📱 **Versionamento** da API (v1, v2)
+- **Autenticação** com JWT
+- **Banco de dados** real (PostgreSQL/MySQL)  
+- **CRUD completo** (POST, PUT, DELETE)
+- **Notificações** por email/SMS
+- **Integração** com APIs de mapas
+- **Versionamento** da API (v1, v2)
 
 Para implementar essas funcionalidades, consulte a documentação oficial do [Flask](https://flask.palletsprojects.com/).
