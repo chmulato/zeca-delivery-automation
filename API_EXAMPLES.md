@@ -1,8 +1,8 @@
-# 🔌 Exemplos de Uso da API
+# Exemplos de Uso da API
 
 Este arquivo contém exemplos práticos de como consumir os endpoints da API Zeca Delivery.
 
-## 🚀 Iniciando a API
+## Iniciando a API
 
 Primeiro, certifique-se de que a API está rodando:
 
@@ -12,7 +12,7 @@ python delivery_api.py
 
 A API estará disponível em: `http://localhost:5000`
 
-## 📡 Exemplos de Requests
+## Exemplos de Requests
 
 ### 1. Health Check
 Verifica se a API está funcionando:
@@ -105,7 +105,7 @@ curl http://localhost:5000/api/stats
 }
 ```
 
-## 🐍 Consumindo com Python
+## Consumindo com Python
 
 ### Exemplo básico com requests:
 
@@ -139,19 +139,19 @@ if __name__ == "__main__":
     # Testar conexão
     health = requests.get(f"{BASE_URL}/api/health")
     if health.status_code == 200:
-        print("✅ API está online!")
+        print("API está online!")
         
         # Buscar dados
         deliveries = get_all_deliveries()
-        print(f"📦 Total de entregas: {deliveries['total']}")
+        print(f"Total de entregas: {deliveries['total']}")
         
         stats = get_statistics()
-        print(f"💰 Valor total: R$ {stats['stats']['valor_total']}")
+        print(f"Valor total: R$ {stats['stats']['valor_total']}")
     else:
-        print("❌ API não está respondendo")
+        print("API não está respondendo")
 ```
 
-## 📊 Códigos de Status HTTP
+## Códigos de Status HTTP
 
 | Código | Significado | Quando Ocorre |
 |--------|-------------|---------------|
@@ -159,7 +159,7 @@ if __name__ == "__main__":
 | 404 | Not Found | Endpoint não encontrado |
 | 500 | Internal Server Error | Erro interno no servidor |
 
-## 🔍 Estrutura dos Dados
+## Estrutura dos Dados
 
 ### Entrega (Delivery Object):
 ```json
@@ -190,7 +190,7 @@ if __name__ == "__main__":
 - `normal` - Prioridade padrão
 - `alta` - Prioridade alta
 
-## 💡 Dicas para Desenvolvimento
+## Dicas para Desenvolvimento
 
 1. **Sempre verifique o health check** antes de consumir outros endpoints
 2. **Use timeouts** nas requisições para evitar travamentos
@@ -198,7 +198,7 @@ if __name__ == "__main__":
 4. **Monitore os logs** da API para debugging
 5. **Use o endpoint de estatísticas** para dashboards
 
-## 🛠️ Debugging
+## Debugging
 
 ### Verificar se a API está rodando:
 ```bash
@@ -220,4 +220,4 @@ Os logs aparecem no terminal onde você executou `python delivery_api.py`
 
 ---
 
-**💡 Estes exemplos demonstram como consumir a API de forma eficiente e robusta!**
+**Estes exemplos demonstram como consumir a API de forma eficiente e robusta!**
