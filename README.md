@@ -4,12 +4,13 @@
 [![Flask](https://img.shields.io/badge/Flask-2.3.3-green.svg)](https://flask.palletsprojects.com/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-black.svg)](https://github.com/chmulato/zeca-delivery-automation)
+[![Cara Core](https://img.shields.io/badge/By-Cara%20Core%20Informática-blue.svg)](https://www.caracore.com.br)
 
-> **Sistema de automação de entregas baseado no artigo "Como o Python Automatizou a Logística de Entregas: Case Real"**
+> **Sistema de automação de entregas baseado no artigo "Como o Python Automatizou a Logística de Entregas: Case Real de Transformação Digital"**
 
-Este repositório contém o **código funcional** que demonstra como transformar um processo manual caótico de delivery em um sistema automatizado e profissional.
+Este repositório contém o **código funcional** desenvolvido pela **Cara Core Informática** que demonstra como transformar um processo manual caótico de delivery em um sistema automatizado e profissional.
 
-🔗 **[Ver artigo completo no LinkedIn](#)** | 📖 **[Documentação da API](docs/API.md)**
+🔗 **[Ver artigo completo](https://caracore.com.br/publications/articles/2025_08_04_article_40.html)** | 📖 **[Documentação da API](docs/API.md)** | 🏢 **[Cara Core Informática](https://www.caracore.com.br)**
 
 ## 📋 O Problema que Resolvemos
 
@@ -31,7 +32,7 @@ Este repositório contém o **código funcional** que demonstra como transformar
 
 ### 1. Clonar o repositório
 ```bash
-git clone https://github.com/seu-usuario/zeca-delivery-automation.git
+git clone https://github.com/chmulato/zeca-delivery-automation.git
 cd zeca-delivery-automation
 ```
 
@@ -153,6 +154,40 @@ O sistema inclui 5 entregas mockadas representando um dia típico:
 - **HTTP:** requests (consumo de API)
 - **Setup:** Python 3.8+ automation
 
+## 🔧 Configuração do Ambiente (Conforme Artigo)
+
+### 1. Instalação do Python:
+- Download em [python.org](https://python.org) (versão 3.8 ou superior)
+- ⚠️ **IMPORTANTE:** Marque "Add Python to PATH" durante a instalação
+
+### 2. VS Code + Extensões Recomendadas:
+- Instale o Visual Studio Code
+- Extensão "Python" (Microsoft)
+- Extensão "Python IntelliSense" para autocompletar
+
+### 3. Configuração Completa do Projeto:
+```bash
+# Criar diretório do projeto
+mkdir delivery-automation
+cd delivery-automation
+
+# Criar ambiente virtual
+python -m venv venv
+
+# Ativar ambiente (Windows)
+venv\Scripts\activate
+
+# Instalar dependências
+pip install requests openpyxl flask python-dotenv
+```
+
+### 4. Configuração no VS Code:
+- Abra a pasta do projeto
+- `Ctrl+Shift+P` > "Python: Select Interpreter"
+- Escolha o Python do ambiente virtual criado
+
+**✅ Pronto!** Ambiente configurado para desenvolver soluções de automação.
+
 ## 📁 Estrutura do Projeto
 
 ```
@@ -205,6 +240,37 @@ Este projeto serve como base para funcionalidades avançadas:
 - 📊 **Dashboard web** interativo
 - 🔄 **Integração** com sistemas reais
 
+## 🏢 Sobre a Cara Core Informática
+
+Na **Cara Core Informática**, entendemos que a automação de processos logísticos não é apenas sobre tecnologia — é sobre **liberar potencial humano para atividades de maior valor**.
+
+O case do Zeca exemplifica perfeitamente nossa filosofia: **identificar gargalos operacionais e criar soluções tecnológicas que geram impacto real e mensurável**.
+
+### 🎯 Nossa Missão
+Transformar processos manuais repetitivos em sistemas automatizados que aumentam produtividade e reduzem erros operacionais.
+
+### 💡 Questão para Reflexão
+> **Quais processos repetitivos em sua organização poderiam se beneficiar de automação?**
+
+## 📞 Contato e Consultoria
+
+Se você enfrenta desafios similares aos do Zeca ou possui processos logísticos que poderiam ser otimizados, a **Cara Core Informática** pode ajudar.
+
+**Entre em contato conosco para:**
+- 💻 Acesso ao repositório GitHub com o código completo
+- 🔧 Consultoria em automação de processos personalizados  
+- 💬 Discussão sobre soluções específicas para sua empresa
+
+### 📧 Informações de Contato
+- **E-mail:** suporte@caracore.com.br
+- **Site:** [www.caracore.com.br](https://www.caracore.com.br)
+- **LinkedIn:** [Cara Core Informática](https://www.linkedin.com/company/cara-core/)
+- **Artigo original:** [Case Real de Automação](https://caracore.com.br/publications/articles/2025_08_04_article_40.html)
+
+## 📝 Licença
+
+MIT License - veja [LICENSE](LICENSE) para detalhes.
+
 ## 🤝 Contribuição
 
 1. Fork o projeto
@@ -213,24 +279,22 @@ Este projeto serve como base para funcionalidades avançadas:
 4. Push para a branch (`git push origin feature/nova-funcionalidade`)
 5. Abra um Pull Request
 
-## 📝 Licença
-
-MIT License - veja [LICENSE](LICENSE) para detalhes.
-
-## 📞 Contato
-
-- **Artigo original:** [LinkedIn](seu-perfil-linkedin)
-- **Dúvidas:** Abra uma [issue](issues)
-- **Consultoria:** Entre em contato para soluções personalizadas
-
 ---
 
-## 💡 Sobre o Artigo
+## 💡 Sobre o Case Real
 
-Este código demonstra na prática os conceitos apresentados no artigo **"Como o Python Automatizou a Logística de Entregas: Case Real"**.
+Este é um **projeto real** desenvolvido pela equipe da **Cara Core Informática**, demonstrando como a automação pode transformar operações logísticas e aumentar a produtividade empresarial.
 
 **A transformação do Zeca é real e replicável!** 🚀
+
+### 📊 Resultados Comprovados do Case:
+- ⏱️ **Tempo:** 30min → 2min (93% redução)
+- ✅ **Precisão:** 100% (zero erros de digitação)  
+- 📈 **Produtividade:** Aumento no número de entregas realizadas
+- 💼 **Operacional:** Melhoria na qualidade do processo logístico
 
 ---
 
 **⭐ Se este projeto te ajudou, deixe uma estrela no repositório!**
+
+**🔗 Desenvolvido com ❤️ pela [Cara Core Informática](https://www.caracore.com.br)**
