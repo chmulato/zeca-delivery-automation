@@ -1,4 +1,4 @@
-# 🚀 Guia de Deploy no GitHub
+# Guia de Deploy no GitHub
 
 ## Próximos Passos para Publicar no Repositório
 
@@ -45,26 +45,26 @@ git push -u origin main
 ```
 zeca-delivery-automation/
 ├── api/
-│   └── delivery_api.py          # 🔗 API Flask com 5 endpoints
+│   └── delivery_api.py          # API Flask com 5 endpoints
 ├── reports/
-│   └── excel_generator.py       # 📊 Gerador Excel avançado
+│   └── excel_generator.py       # Gerador Excel avançado
 ├── data/
-│   └── sample_data.py           # 📋 Dados mockados
+│   └── sample_data.py           # Dados mockados
 ├── docs/
-│   ├── API.md                   # 📖 Documentação completa
-│   └── EXAMPLES.md              # 💡 Exemplos práticos
+│   ├── API.md                   # Documentação completa
+│   └── EXAMPLES.md              # Exemplos práticos
 ├── tests/
-│   └── test_api.py              # 🧪 Testes automatizados
-├── logs/                        # 📝 Logs (criado pelo setup)
-├── output/                      # 📁 Saídas (criado pelo setup)
-├── temp/                        # 🗂️ Temporários (criado pelo setup)
-├── .gitignore                   # 🚫 Exclusões Git
-├── README.md                    # 📚 Documentação principal
-├── requirements.txt             # 📦 Dependências
-├── setup.py                     # ⚙️ Setup automatizado
-├── LICENSE                      # 📄 Licença MIT
-├── CHANGELOG.md                 # 📝 Histórico de versões
-└── API_EXAMPLES.md              # 🔧 Exemplos de API
+│   └── test_api.py              # Testes automatizados
+├── logs/                        # Logs (criado pelo setup)
+├── output/                      # Saídas (criado pelo setup)
+├── temp/                        # Temporários (criado pelo setup)
+├── .gitignore                   # Exclusões Git
+├── README.md                    # Documentação principal
+├── requirements.txt             # Dependências
+├── setup.py                     # Setup automatizado
+├── LICENSE                      # Licença MIT
+├── CHANGELOG.md                 # Histórico de versões
+└── API_EXAMPLES.md              # Exemplos de API
 ```
 
 ### 4. Badges para README.md
@@ -136,7 +136,7 @@ Configure no GitHub:
 Adicione seção no README.md:
 
 ```markdown
-## 🤝 Contribuindo
+## Contribuindo
 
 1. Fork o projeto
 2. Crie uma branch (`git checkout -b feature/nova-funcionalidade`)
@@ -150,29 +150,29 @@ Adicione seção no README.md:
 Atualize o README.md com:
 
 ```markdown
-## 📖 Artigo Original
+## Artigo Original
 
 Este código foi desenvolvido como demonstração prática do artigo:
 **"Como o Python Automatizou a Logística de Entregas: Case Real"**
 
-🔗 [Ler artigo completo no LinkedIn](#)
+[Ler artigo completo no LinkedIn](#)
 ```
 
 ---
 
-## 🎯 Checklist Final
+## Checklist Final
 
-- [ ] ✅ Setup funcionando (`python setup.py`)
-- [ ] ✅ API iniciando (`python api/delivery_api.py`)
-- [ ] ✅ Relatório gerando (`python reports/excel_generator.py`)
-- [ ] ✅ Testes passando (`python tests/test_api.py`)
-- [ ] ✅ Documentação completa
-- [ ] ✅ Estrutura organizada
-- [ ] ✅ README.md abrangente
-- [ ] ✅ .gitignore adequado
-- [ ] ✅ Licença MIT
+- [ ] Setup funcionando (`python setup.py`)
+- [ ] API iniciando (`python api/delivery_api.py`)
+- [ ] Relatório gerando (`python reports/excel_generator.py`)
+- [ ] Testes passando (`python tests/test_api.py`)
+- [ ] Documentação completa
+- [ ] Estrutura organizada
+- [ ] README.md abrangente
+- [ ] .gitignore adequado
+- [ ] Licença MIT
 
-## 🚀 Resultado Final
+## Resultado Final
 
 **Repositório pronto para produção** com:
 - Sistema funcional de automação de delivery
@@ -182,4 +182,4 @@ Este código foi desenvolvido como demonstração prática do artigo:
 - Testes automatizados
 - Setup simplificado para usuários
 
-**Perfeito para demonstrar competências técnicas e servir como base para projetos reais!** 🎉
+**Perfeito para demonstrar competências técnicas e servir como base para projetos reais!**
