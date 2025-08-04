@@ -1,4 +1,4 @@
-# 📋 Changelog
+# Changelog
 
 Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 
@@ -7,7 +7,7 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [1.0.0] - 2025-08-04
 
-### ✨ Adicionado
+### Adicionado
 - **API Flask completa** com 5 endpoints funcionais
   - `GET /api/entregas` - Lista todas as entregas
   - `GET /api/entregas/pendentes` - Lista entregas pendentes
@@ -24,16 +24,16 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - **Documentação completa** com exemplos de uso
 - **Estrutura de projeto organizada** (data/, logs/, reports/)
 
-### 🎯 Funcionalidades Principais
-- ✅ Consumo de API REST com tratamento de erros
-- ✅ Formatação Excel profissional com openpyxl
-- ✅ Cores condicionais baseadas no status das entregas
-- ✅ Cálculo automático de estatísticas (taxa de entrega, valor total)
-- ✅ Endpoints RESTful seguindo boas práticas
-- ✅ Health check para monitoramento da API
-- ✅ Logs detalhados do processo de geração
+### Funcionalidades Principais
+- Consumo de API REST com tratamento de erros
+- Formatação Excel profissional com openpyxl
+- Cores condicionais baseadas no status das entregas
+- Cálculo automático de estatísticas (taxa de entrega, valor total)
+- Endpoints RESTful seguindo boas práticas
+- Health check para monitoramento da API
+- Logs detalhados do processo de geração
 
-### 📊 Dados de Demonstração
+### Dados de Demonstração
 - **5 entregas mockadas** com dados realísticos:
   - João Silva - Pizza Calabresa - R$ 45,90 (pendente)
   - Maria Santos - Pizza Margherita - R$ 35,50 (em_transito)
@@ -42,13 +42,13 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
   - Pedro Ferreira - Pizza Pepperoni - R$ 67,80 (pendente)
 - **Estatísticas calculadas**: Taxa de entrega 20%, Valor total R$ 280,90
 
-### 🛠️ Tecnologias Utilizadas
+### Tecnologias Utilizadas
 - **Flask 2.3.3** - Framework web para API REST
 - **openpyxl 3.1.2** - Manipulação de arquivos Excel
 - **requests 2.31.0** - Cliente HTTP para consumo de API
 - **python-dotenv 1.0.0** - Gerenciamento de variáveis de ambiente
 
-### 📁 Estrutura do Projeto
+### Estrutura do Projeto
 ```
 zeca-delivery-automation/
 ├── delivery_api.py              # API Flask principal
@@ -65,14 +65,14 @@ zeca-delivery-automation/
 └── reports/                     # Relatórios (criado automaticamente)
 ```
 
-### 🎯 Resultados Demonstrados
-- ⏱️ **Tempo de preparação**: 30min → 2min (93% redução)
-- ✅ **Precisão**: 100% (zero erros de digitação)
-- 📊 **Visibilidade**: Dashboard visual completo
-- 🔄 **Escalabilidade**: Suporta centenas de entregas
-- 💼 **Profissionalismo**: Relatórios de qualidade corporativa
+### Resultados Demonstrados
+- **Tempo de preparação**: 30min → 2min (93% redução)
+- **Precisão**: 100% (zero erros de digitação)
+- **Visibilidade**: Dashboard visual completo
+- **Escalabilidade**: Suporta centenas de entregas
+- **Profissionalismo**: Relatórios de qualidade corporativa
 
-### 🚀 Como Usar
+### Como Usar
 1. Execute `python setup.py` para configurar o ambiente
 2. Inicie a API com `python delivery_api.py`
 3. Gere relatórios com `python generate_delivery_report.py`
@@ -80,7 +80,7 @@ zeca-delivery-automation/
 
 ---
 
-## 📈 Roadmap Futuro
+## Roadmap Futuro
 
 ### [1.1.0] - Planejado
 - [ ] **Integração com banco de dados** (SQLite/PostgreSQL)
@@ -102,14 +102,14 @@ zeca-delivery-automation/
 
 ---
 
-## 🤝 Contribuições
+## Contribuições
 
 Contribuições são bem-vindas! Veja [CONTRIBUTING.md](CONTRIBUTING.md) para detalhes.
 
-## 📝 Licença
+## Licença
 
 Este projeto está sob a licença MIT. Veja [LICENSE](LICENSE) para detalhes.
 
 ---
 
-**🎉 Versão 1.0.0 - Sistema funcional demonstrando automação real de delivery!**
+**Versão 1.0.0 - Sistema funcional demonstrando automação real de delivery!**
