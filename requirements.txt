@@ -1,0 +1,14 @@
+# Dependências do Sistema Zeca Delivery
+# ====================================
+# 
+# Para instalar: pip install -r requirements.txt
+# Ou execute: python setup.py
+
+# Framework web para API REST
+Flask==2.3.3
+
+# Manipulação de arquivos Excel
+openpyxl==3.1.2
+
+# Cliente HTTP para consumir APIs
+requests==2.31.0
